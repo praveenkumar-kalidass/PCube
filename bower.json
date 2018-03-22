@@ -1,0 +1,25 @@
+{
+  "name": "pcube",
+  "description": "A Website to hold details about Bootcamp",
+  "main": "index.js",
+  "authors": [
+    "Praveenkumar K"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Webpack3",
+    "React",
+    "Redux"
+  ],
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
