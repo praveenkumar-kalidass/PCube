@@ -19,7 +19,16 @@
     "test",
     "tests"
   ],
+  "overrides": {
+    "materialize": {
+      "main": [
+        "dist/css/materialize.min.css",
+        "dist/js/materialize.min.js"
+      ]
+    }
+  },
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "materialize": "^0.100.2"
   }
 }
