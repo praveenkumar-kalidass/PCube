@@ -18,7 +18,7 @@ class Header extends React.Component {
         <nav className="nav-header">
           <div className="nav-wrapper">
             <NavLink to="/" className="brand-logo">
-              PCUBE
+              <img src="images/logo.png"/>
             </NavLink>
             <ul className="navigation right hide-on-med-and-down">
               <li>

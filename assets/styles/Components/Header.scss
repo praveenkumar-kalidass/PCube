@@ -7,8 +7,14 @@
       top: 30px;
       width: calc(100% - 150px);
       margin: 0 75px;
+      z-index: 1;
       .brand-logo {
         color: $medium-black;
+        height: 100%;
+        img {
+          height: 100%;
+          margin-left: 5px;
+        }
       }
       .navigation {
         .item {
