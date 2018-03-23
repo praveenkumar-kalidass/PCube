@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header.react";
 import Action from "./Action.react";
+import Footer from "./Footer.react";
 
 class AppContainer extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class AppContainer extends React.Component {
         <Header/>
         <Action/>
         {this.props.children}
+        <Footer/>
       </div>
     );
   }
