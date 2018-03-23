@@ -43,12 +43,12 @@ gulp.task("sass:watch", function() {
 /**
  * Copy images to build folder
  */
-// gulp.task("copy:images", function() {
-//   return gulp.src(["./assets/images/**/*"], {
-//       base: "assets"
-//     })
-//     .pipe(gulp.dest("./public/assets"));
-// });
+gulp.task("copy:images", function() {
+  return gulp.src(["./assets/images/**/*"], {
+      base: "assets"
+    })
+    .pipe(gulp.dest("./public"));
+});
 
 /**
  * Copy fonts to build folder
@@ -122,6 +122,7 @@ gulp.task("dev", (callback) => {
     "clean",
     "sass",
     "sass:watch",
+    "copy:images",
     "copy:fonts",
     "bower:js",
     "bower:css",
@@ -136,6 +137,7 @@ gulp.task("build", (callback) => {
   runSequence([
     "clean",
     "sass",
+    "copy:images",
     "copy:fonts",
     "bower:js",
     "bower:css",

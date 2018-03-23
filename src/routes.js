@@ -7,7 +7,7 @@ const AppRouter = () => (
   <Router basename="/">
     <Route path="/">
       <AppContainer>
-        <Route path="/home" component={Home}/>
+        <Route path="/" component={Home}/>
       </AppContainer>
     </Route>
   </Router>
