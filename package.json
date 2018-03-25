@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "del": "^3.0.0",
+    "facebook-plugins": "^1.0.5",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
