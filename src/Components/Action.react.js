@@ -3,29 +3,29 @@ import React from "react";
 class Action extends React.Component {
   render() {
     return (
-      <div className="fixed-action-btn horizontal">
+      <div className="ui-action fixed-action-btn horizontal active">
         <a className="btn-floating btn-large black">
-          <i className="large material-icons">mode_edit</i>
+          <i className="large material-icons">format_quote</i>
         </a>
         <ul>
           <li>
-            <a className="btn-floating red">
-              <i className="material-icons">insert_chart</i>
+            <a className="btn-floating google-plus">
+              <img src="images/google-plus-logo.png"/>
             </a>
           </li>
           <li>
-            <a className="btn-floating yellow darken-1">
-              <i className="material-icons">format_quote</i>
+            <a className="btn-floating twitter">
+              <img src="images/twitter-logo.png"/>
             </a>
           </li>
           <li>
-            <a className="btn-floating green">
-              <i className="material-icons">publish</i>
+            <a className="btn-floating facebook">
+              <img src="images/facebook-logo.png"/>
             </a>
           </li>
           <li>
-            <a className="btn-floating blue">
-              <i className="material-icons">attach_file</i>
+            <a className="btn-floating instagram">
+              <img src="images/facebook-logo.png"/>
             </a>
           </li>
         </ul>
