@@ -22,7 +22,7 @@ class Header extends React.Component {
             </NavLink>
             <ul className="navigation right hide-on-med-and-down">
               <li>
-                <NavLink to="/" className="item" activeClassName="active">
+                <NavLink exact to="/" className="item" activeClassName="active">
                   Home
                 </NavLink>
               </li>
@@ -32,7 +32,7 @@ class Header extends React.Component {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/gallery" className="item" activeClassName="active">
+                <NavLink exact to="/gallery" className="item" activeClassName="active">
                   Gallery
                 </NavLink>
               </li>

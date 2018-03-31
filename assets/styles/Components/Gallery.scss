@@ -1,0 +1,15 @@
+.pcube-ui {
+  .ui-gallery {
+    .slider {
+      .indicator-item {
+        &.active {
+          background-color: $medium-black;
+        }
+      }
+    }
+    .image {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+}
