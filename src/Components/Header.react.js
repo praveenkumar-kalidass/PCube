@@ -5,11 +5,13 @@ import {NavLink} from "react-router-dom";
 class Header extends React.Component {
   componentDidMount() {
     this.el = $(ReactDOM.findDOMNode(this));
-    this.el.find(".side-navigation").sideNav({
-      edge: "right",
-      closeOnClick: true,
-      draggable: true
-    });
+    if (this.el.width() < 993) {
+      this.el.find(".side-navigation").sideNav({
+        edge: "right",
+        closeOnClick: true,
+        draggable: true
+      });
+    }
   }
 
   render() {
@@ -27,7 +29,7 @@ class Header extends React.Component {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className="item" activeClassName="active">
+                <NavLink exact to="/about" className="item" activeClassName="active">
                   About
                 </NavLink>
               </li>
@@ -74,10 +76,26 @@ class Header extends React.Component {
               </a>
             </div>
           </li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/faq">FAQ</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li>
+            <NavLink exact to="/about" activeClassName="active">
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact to="/gallery" activeClassName="active">
+              Gallery
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact to="/faq" activeClassName="active">
+              FAQ
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact to="/contact" activeClassName="active">
+              Contact
+            </NavLink>
+          </li>
         </ul>
       </div>
     );

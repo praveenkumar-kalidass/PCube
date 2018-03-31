@@ -8,9 +8,11 @@ class AppContainer extends React.Component {
     return (
       <div className="pcube-ui">
         <Header/>
-        <Action/>
-        {this.props.children}
-        <Footer/>
+        <div className="ui-body">
+          <Action/>
+          {this.props.children}
+          <Footer/>
+        </div>
       </div>
     );
   }
