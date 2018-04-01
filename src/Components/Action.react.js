@@ -3,7 +3,7 @@ import React from "react";
 class Action extends React.Component {
   render() {
     return (
-      <div className="ui-action fixed-action-btn horizontal active">
+      <div className="ui-action fixed-action-btn horizontal click-to-toggle">
         <a className="btn-floating btn-large black">
           <i className="large material-icons">format_quote</i>
         </a>
@@ -20,11 +20,6 @@ class Action extends React.Component {
           </li>
           <li>
             <a className="btn-floating facebook">
-              <img src="images/facebook-logo.png"/>
-            </a>
-          </li>
-          <li>
-            <a className="btn-floating instagram">
               <img src="images/facebook-logo.png"/>
             </a>
           </li>

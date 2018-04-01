@@ -39,12 +39,12 @@ class Header extends React.Component {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/faq" className="item" activeClassName="active">
+                <NavLink exact to="/faq" className="item" activeClassName="active">
                   FAQ
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className="item" activeClassName="active">
+                <NavLink exact to="/contact" className="item" activeClassName="active">
                   Contact
                 </NavLink>
               </li>
