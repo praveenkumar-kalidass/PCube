@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import Gallery from "./Components/Gallery";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
+import Faq from "./Components/Faq";
 
 const AppRouter = () => (
   <Router basename="/">
@@ -14,6 +15,7 @@ const AppRouter = () => (
         <Route path="/gallery" component={Gallery}/>
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
+        <Route path="/faq" component={Faq}/>
       </AppContainer>
     </Route>
   </Router>
