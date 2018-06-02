@@ -11,5 +11,16 @@
       width: 100%;
       margin: 20px 0;
     }
+    .card {
+      .btn-floating {
+        background-color: $black !important;
+      }
+    }
+    .gallery-album {
+      max-height: 80%;
+      .album-image {
+        width: 100%;
+      }
+    }
   }
 }

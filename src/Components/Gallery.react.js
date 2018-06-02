@@ -5,6 +5,22 @@ class Gallery extends React.Component {
   componentDidMount() {
     this.el = $(ReactDOM.findDOMNode(this));
     this.el.find(".slider").slider();
+    this.el.find("#album-modal").modal({
+      dismissible: true,
+      startingTop: "4%",
+      endingTop: "10%"
+    });
+    new Viewer(document.getElementById("album"), {
+      inline: false
+    });
+  }
+
+  openAlbum = (albumIndex) => {
+    this.el.find("#album-modal").modal("open");
+  }
+
+  closeAlbum = (albumIndex) => {
+    this.el.find("#album-modal").modal("close");
   }
 
   render() {
@@ -63,24 +79,91 @@ class Gallery extends React.Component {
             </div>
             <div className="col s12 m12 l12">
               <div className="col s12 m6 l4">
-                <img className="materialboxed image" src="images/side-navigation.jpg"/>
+                <div className="card">
+                  <div className="card-image">
+                    <img className="image" src="images/side-navigation.jpg" alt="Picture"/>
+                    <span className="card-title">Image Title</span>
+                    <a onClick={() => this.openAlbum("1")}
+                      className="btn-floating halfway-fab waves-effect red">
+                      <i className="material-icons">launch</i>
+                    </a>
+                  </div>
+                  <div className="card-content">
+                    <p>I am a very simple card</p>
+                  </div>
+                </div>
               </div>
               <div className="col s12 m6 l4">
-                <img className="materialboxed image" src="images/side-navigation.jpg"/>
+                <div className="card">
+                  <div className="card-image">
+                    <img className="image" src="images/side-navigation.jpg" alt="Picture"/>
+                    <span className="card-title">Image Title</span>
+                    <a onClick={() => this.openAlbum("1")}
+                      className="btn-floating halfway-fab waves-effect red">
+                      <i className="material-icons">launch</i>
+                    </a>
+                  </div>
+                  <div className="card-content">
+                    <p>I am a very simple card</p>
+                  </div>
+                </div>
               </div>
               <div className="col s12 m6 l4">
-                <img className="materialboxed image" src="images/side-navigation.jpg"/>
-              </div>
-              <div className="col s12 m6 l4">
-                <img className="materialboxed image" src="images/side-navigation.jpg"/>
-              </div>
-              <div className="col s12 m6 l4">
-                <img className="materialboxed image" src="images/side-navigation.jpg"/>
-              </div>
-              <div className="col s12 m6 l4">
-                <img className="materialboxed image" src="images/side-navigation.jpg"/>
+                <div className="card">
+                  <div className="card-image">
+                    <img className="image" src="images/side-navigation.jpg" alt="Picture"/>
+                    <span className="card-title">Image Title</span>
+                    <a onClick={() => this.openAlbum("1")}
+                      className="btn-floating halfway-fab waves-effect red">
+                      <i className="material-icons">launch</i>
+                    </a>
+                  </div>
+                  <div className="card-content">
+                    <p>I am a very simple card</p>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div id="album-modal" className="modal gallery-album bottom-sheet">
+          <div className="modal-content">
+            <div className="row">
+              <h4 className="col s11 m11 l11">Album</h4>
+              <i className="col s1 m1 l1 material-icons pointer"
+                onClick={() => this.closeAlbum("1")}>
+                clear
+              </i>
+            </div>
+            <ul id="album" className="row">
+              <li className="col s4 m3 l2">
+                <img className="album-image" src="images/side-navigation.jpg" alt="Picture 1"/>
+              </li>
+              <li className="col s4 m3 l2">
+                <img className="album-image" src="images/side-navigation.jpg" alt="Picture 2"/>
+              </li>
+              <li className="col s4 m3 l2">
+                <img className="album-image" src="images/side-navigation.jpg" alt="Picture 3"/>
+              </li>
+              <li className="col s4 m3 l2">
+                <img className="album-image" src="images/side-navigation.jpg" alt="Picture 1"/>
+              </li>
+              <li className="col s4 m3 l2">
+                <img className="album-image" src="images/side-navigation.jpg" alt="Picture 2"/>
+              </li>
+              <li className="col s4 m3 l2">
+                <img className="album-image" src="images/side-navigation.jpg" alt="Picture 3"/>
+              </li>
+              <li className="col s4 m3 l2">
+                <img className="album-image" src="images/side-navigation.jpg" alt="Picture 1"/>
+              </li>
+              <li className="col s4 m3 l2">
+                <img className="album-image" src="images/side-navigation.jpg" alt="Picture 2"/>
+              </li>
+              <li className="col s4 m3 l2">
+                <img className="album-image" src="images/side-navigation.jpg" alt="Picture 3"/>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

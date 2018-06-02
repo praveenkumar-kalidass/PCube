@@ -25,10 +25,17 @@
         "dist/css/materialize.min.css",
         "dist/js/materialize.min.js"
       ]
+    },
+    "img-viewerjs": {
+      "main": [
+        "dist/viewer.min.js",
+        "dist/viewer.min.css"
+      ]
     }
   },
   "dependencies": {
     "jquery": "^3.2.1",
-    "materialize": "^0.100.2"
+    "materialize": "^0.100.2",
+    "img-viewerjs": "^1.1.0"
   }
 }

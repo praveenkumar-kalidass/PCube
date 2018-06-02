@@ -19,7 +19,8 @@
         }
     },
     "globals": {
-        "$": true
+        "$": true,
+        "Viewer": true
     },
     "rules": {
         "semi": [2, "always"],
